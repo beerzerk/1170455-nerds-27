@@ -26,7 +26,7 @@
       <h1>Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2>Фильтр</h2>
-        <form class="filter" action="" method="">
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
           <h3>Стоимость:</h3>
           <div class="price-slider">
             <input type="range" name="price-min" value="0">
@@ -39,58 +39,43 @@
           </p>
           </div>
           <h3>Сетка:</h3>
-          <input type="radio" name="" id="" checked>
-          <label for="">Адаптивная</label>
-          <input type="radio" name="" id="">
-          <label for="">Фиксированная</label>
-          <input type="radio" name="" id="">
-          <label for="">Резиновая</label>
+          <input type="radio" name="filter-grid" id="adaptive" checked>
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" name="filter-grid" id="fixed">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" name="filter-grid" id="rubber">
+          <label for="rubber">Резиновая</label>
           <h3>Особенности:</h3>
-          <input type="checkbox" name="" id="">
-          <label for="">Слайдер</label>
-          <input type="checkbox" name="" id="">
-          <label for="">Блок преимуществ</label>
-          <input type="checkbox" name="" id="">
-          <label for="">Новости</label>
-          <input type="checkbox" name="" id="">
-          <label for="">Галерея</label>
-          <input type="checkbox" name="" id="">
-          <label for="">Корзина</label>
+          <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+          <label for="filter-slider">Слайдер</label>
+          <input type="checkbox" name="filter-advantages" id="filter-advantages">
+          <label for="filter-advantages">Блок преимуществ</label>
+          <input type="checkbox" name="filter-news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+          <input type="checkbox" name="filter-gallery" id="filter-gallery">
+          <label for="filter-gallery">Галерея</label>
+          <input type="checkbox" name="filter-cart" id="filter-cart">
+          <label for="filter-cart">Корзина</label>
           <button type="submit" name="btn-filter" class="btn">Показать</button>
         </form>
       </section>
       <section class="sort">
         <h2>Сортировка</h2>
         <h3>Сортировать:</h3>
-        <form class="sort" action="" method="post">
-          <ul>
-            <li>
-              <input type="radio" name="" id="">
-              <label for="">По цене</label>
-            </li>
-            <li>
-              <input type="radio" name="" id="">
-              <label for="">По типу</label>
-            </li>
-            <li>
-              <input type="radio" name="" id="">
-              <label for="">По названию</label>
-            </li>
-            <li>
-              <input type="radio" name="" id="">
-              <label for=""></label>
-            </li>
-            <li>
-              <input type="radio" name="" id="">
-              <label for=""></label>
-            </li>
+          <ul class="sort-type">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
-        </form>
+          <ul class="sort-direction">
+            <li><a href="#">По убыванию</a></li>
+            <li><a href="#">По возрастанию</a></li>
+          </ul>
       </section>
       <section>
         <ul>
           <li>
-            <a href="">
+            <a href="#">
               <h3>Sedona</h3>
             </a>
             <p>Информационный сайт для туристов</p>
@@ -98,7 +83,7 @@
             <img src="img/cat/img-sedona.jpg" width="360" height="615" alt="Sedona">
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <h3>Pink App</h3>
             </a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -106,7 +91,7 @@
             <img src="img/cat/img-pink.jpg" width="360" height="615" alt="Pink">
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <h3>Barbershop</h3>
             </a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -114,7 +99,7 @@
             <img src="img/cat/img-barbershop.jpg" width="360" height="615" alt="Barbershop">
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <h3>Mishka</h3>
             </a>
             <p>Интернет-магазин  вязаных игрушек</p>
@@ -122,7 +107,7 @@
             <img src="img/cat/img-mishka.jpg" width="360" height="615" alt="Mishka">
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <h3>A plus</h3>
             </a>
             <p>Лендинг курсов повышения квалификации</p>
@@ -130,7 +115,7 @@
             <img src="img/cat/img-aplus.jpg" width="360" height="615" alt="A plus">
           </li>
           <li>
-            <a href="">
+            <a href="#">
             <h3>Кваст</h3>
             </a>
             <p>Промо-сайт производителя крафтового кваса</p>
