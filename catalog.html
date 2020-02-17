@@ -3,31 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="header-main">
+      <nav class="header-main-nav">
+        <a href="#" class="header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
         </a>
         <ul class="menu">
-          <li class="menu-item"><a href="#">Студия</a></li>
-          <li class="menu-item"><a href="#">Клиенты</a></li>
-          <li class="menu-item active"><a href="#">Магазин</a></li>
-          <li class="menu-item"><a href="#">Контакты</a></li>
+          <li class="menu-item"><a href="#" class="header-menu-link">Студия</a></li>
+          <li class="menu-item"><a href="#" class="header-menu-link">Клиенты</a></li>
+          <li class="menu-item active"><a href="#" class="header-menu-link">Магазин</a></li>
+          <li class="menu-item"><a href="#" class="header-menu-link">Контакты</a></li>
         </ul>
         <div>
-          <a href="#" class="cart">Корзина</a>
+          <a href="#" class="header-cart">Корзина</a>
         </div>
       </nav>
     </header>
     <main>
       <h1>Магазин готовых шаблонов</h1>
-      <section class="filter">
-        <h2>Фильтр</h2>
-        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
-          <h3>Стоимость:</h3>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+          <h3 class="filter-title">Стоимость:</h3>
           <div class="price-slider">
             <input type="range" name="price-min" value="0">
             <input type="range" name="price-max" value="15000">
@@ -38,29 +39,33 @@
             <input type="text" name="price-max" id="price-max" value="15000">
           </p>
           </div>
-          <h3>Сетка:</h3>
-          <input type="radio" name="filter-grid" id="adaptive" checked>
-          <label for="adaptive">Адаптивная</label>
-          <input type="radio" name="filter-grid" id="fixed">
-          <label for="fixed">Фиксированная</label>
-          <input type="radio" name="filter-grid" id="rubber">
-          <label for="rubber">Резиновая</label>
-          <h3>Особенности:</h3>
-          <input type="checkbox" name="filter-slider" id="filter-slider" checked>
-          <label for="filter-slider">Слайдер</label>
-          <input type="checkbox" name="filter-advantages" id="filter-advantages">
-          <label for="filter-advantages">Блок преимуществ</label>
-          <input type="checkbox" name="filter-news" id="filter-news" checked>
-          <label for="filter-news">Новости</label>
-          <input type="checkbox" name="filter-gallery" id="filter-gallery">
-          <label for="filter-gallery">Галерея</label>
-          <input type="checkbox" name="filter-cart" id="filter-cart">
-          <label for="filter-cart">Корзина</label>
+          <fieldset class="filter-grids">
+            <legend class="filter-title">Сетка:</legend>
+            <input type="radio" name="filter-grid" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+            <input type="radio" name="filter-grid" id="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" name="filter-grid" id="rubber">
+            <label for="rubber">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-features">
+            <legend class="filter-title">Особенности:</legend>
+            <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+            <input type="checkbox" name="filter-advantages" id="filter-advantages">
+            <label for="filter-advantages">Блок преимуществ</label>
+            <input type="checkbox" name="filter-news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+            <input type="checkbox" name="filter-gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+            <input type="checkbox" name="filter-cart" id="filter-cart">
+            <label for="filter-cart">Корзина</label>
+          </fieldset>
           <button type="submit" name="btn-filter" class="btn">Показать</button>
         </form>
       </section>
       <section class="sort">
-        <h2>Сортировка</h2>
+        <h2 class="visually-hidden">Сортировка</h2>
         <h3>Сортировать:</h3>
           <ul class="sort-type">
             <li><a href="#">По цене</a></li>
@@ -160,7 +165,25 @@
     </footer>
       <section class="popup">
         <h2>Напишите нам</h2>
-        <!-- Форма ввода -->
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <button type="button" class="feedback-form-close" name="btn-feedback-close" aria-label="Закрыть форму">
+            <img src="img/svg/close-cross.svg" alt="Закрыть">
+          </button>
+          <b class="feedback-form">Напишите нам</b>
+            <div class="feedback-form">
+              <p>
+                <label for="username" class="feedback-form-label">Ваше имя</label>
+                <input type="text" id="username" class="feedback-form-text" name="username" value="" placeholder="Имя Фамилия" required>
+              </p>
+              <p>
+                <label for="email" class="feedback-form-label">Ваш e-mail</label>
+                <input type="email" id="email" class="feedback-form-email" name="email" value="" placeholder="email@example.com" required>
+              </p>
+            </div>
+            <label for="text-letter" class="feedback-form-label">Текст письма</label>
+            <textarea id="text-letter" class="feedback-form-textarea" name="name" rows="10" cols="100"></textarea>
+            <button type="submit" class="btn btn-red feedback-form-btn-submit" name="btn-feedback-submit">Отправить</button>
+        </form>
       </section>
   </body>
 </html>
