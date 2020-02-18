@@ -65,71 +65,73 @@
           <button type="submit" name="btn-filter" class="btn">Показать</button>
         </form>
       </section>
-      <section class="sort">
-        <h2 class="visually-hidden">Сортировка</h2>
-        <h3>Сортировать:</h3>
-          <ul class="sort-type">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По названию</a></li>
+      <section class="templates">
+        <section class="sort">
+          <h2 class="visually-hidden">Сортировка</h2>
+          <h3>Сортировать:</h3>
+            <ul class="sort-type">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+            </ul>
+            <ul class="sort-direction">
+              <li><a href="#">По убыванию</a></li>
+              <li><a href="#">По возрастанию</a></li>
+            </ul>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Шаблоны</h2>
+          <ul class="templates-list">
+            <li class=templates-item>
+              <a href="#">
+                <h3 class="visually-hidden">Sedona</h3>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-sedona.jpg" width="360" height="615" alt="Sedona">
+            </li>
+            <li>
+              <a href="#">
+                <h3>Pink App</h3>
+              </a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-pink.jpg" width="360" height="615" alt="Pink">
+            </li>
+            <li>
+              <a href="#">
+                <h3>Barbershop</h3>
+              </a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-barbershop.jpg" width="360" height="615" alt="Barbershop">
+            </li>
+            <li>
+              <a href="#">
+                <h3>Mishka</h3>
+              </a>
+              <p>Интернет-магазин  вязаных игрушек</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-mishka.jpg" width="360" height="615" alt="Mishka">
+            </li>
+            <li>
+              <a href="#">
+                <h3>A plus</h3>
+              </a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-aplus.jpg" width="360" height="615" alt="A plus">
+            </li>
+            <li>
+              <a href="#">
+              <h3>Кваст</h3>
+              </a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <p>9 900 руб.</p>
+              <img src="img/cat/img-kvast.jpg" width="360" height="615" alt="Кваст">
+            </li>
           </ul>
-          <ul class="sort-direction">
-            <li><a href="#">По убыванию</a></li>
-            <li><a href="#">По возрастанию</a></li>
-          </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Шаблоны</h2>
-        <ul class="templates-list">
-          <li class=templates-item>
-            <a href="#">
-              <h3 class="visually-hidden">Sedona</h3>
-            </a>
-            <p>Информационный сайт для туристов</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-sedona.jpg" width="360" height="615" alt="Sedona">
-          </li>
-          <li>
-            <a href="#">
-              <h3>Pink App</h3>
-            </a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-pink.jpg" width="360" height="615" alt="Pink">
-          </li>
-          <li>
-            <a href="#">
-              <h3>Barbershop</h3>
-            </a>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-barbershop.jpg" width="360" height="615" alt="Barbershop">
-          </li>
-          <li>
-            <a href="#">
-              <h3>Mishka</h3>
-            </a>
-            <p>Интернет-магазин  вязаных игрушек</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-mishka.jpg" width="360" height="615" alt="Mishka">
-          </li>
-          <li>
-            <a href="#">
-              <h3>A plus</h3>
-            </a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-aplus.jpg" width="360" height="615" alt="A plus">
-          </li>
-          <li>
-            <a href="#">
-            <h3>Кваст</h3>
-            </a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <p>9 900 руб.</p>
-            <img src="img/cat/img-kvast.jpg" width="360" height="615" alt="Кваст">
-          </li>
-        </ul>
+        </section>
       </section>
       <section class="contacts"></section>
     </main>
@@ -165,27 +167,28 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+
       <section class="popup">
-        <h2>Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback-form hidden" action="https://echo.htmlacademy.ru" method="post">
           <button type="button" class="feedback-form-close" name="btn-feedback-close" aria-label="Закрыть форму">
             <img src="img/svg/close-cross.svg" alt="Закрыть">
           </button>
-          <b class="feedback-form">Напишите нам</b>
-            <div class="feedback-form">
-              <p>
-                <label for="username" class="feedback-form-label">Ваше имя</label>
-                <input type="text" id="username" class="feedback-form-text" name="username" value="" placeholder="Имя Фамилия" required>
-              </p>
-              <p>
-                <label for="email" class="feedback-form-label">Ваш e-mail</label>
-                <input type="email" id="email" class="feedback-form-email" name="email" value="" placeholder="email@example.com" required>
-              </p>
+          <b class="feedback-form-title">Напишите нам</b>
+          <div class="feedback-form-area">
+            <p>
+              <label for="username" class="feedback-form-label">Ваше имя</label>
+              <input type="text" id="username" class="feedback-form-text" name="username" value="" placeholder="Имя Фамилия" required>
+            </p>
+            <p>
+              <label for="email" class="feedback-form-label">Ваш e-mail</label>
+              <input type="email" id="email" class="feedback-form-email" name="email" value="" placeholder="email@example.com" required>
+            </p>
             </div>
             <label for="text-letter" class="feedback-form-label">Текст письма</label>
             <textarea id="text-letter" class="feedback-form-textarea" name="name" rows="10" cols="100"></textarea>
             <button type="submit" class="btn btn-red feedback-form-btn-submit" name="btn-feedback-submit">Отправить</button>
         </form>
       </section>
+
   </body>
 </html>
