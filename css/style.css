@@ -455,7 +455,7 @@ html {
 }
 
 .about {
-  width: 650px;
+  width: 660px;
   word-break: keep-all;
 }
 
@@ -476,7 +476,7 @@ html {
 
 .about b {
   display: block;
-  padding-top: 36px;
+  padding-top: 34px;
   padding-bottom: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -530,7 +530,7 @@ html {
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   vertical-align: middle;
 }
 
