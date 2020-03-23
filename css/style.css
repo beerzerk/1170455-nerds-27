@@ -631,7 +631,7 @@ html {
 footer {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0;
 }
 
 /*Контакты*/
@@ -725,6 +725,7 @@ footer {
   align-items: center;
   margin: 0 auto;
   min-height: 177px;
+  padding: 68px 0 78px;
 }
 
 .social-list {
@@ -734,8 +735,9 @@ footer {
   align-items: center;
   max-width: 50%;
   height: 80px;
-  margin: 0 0 0 20px;
+  margin: 0;
   padding: 0;
+  padding-right: 10px;
   list-style: none;
 }
 
@@ -1281,6 +1283,7 @@ footer {
   margin: 0;
   margin-top: 28px;
   width: 100%;
+  font-size: 16px;
 }
 
 .templates {
@@ -1422,13 +1425,24 @@ footer {
   padding: 0;
   padding-top: 2px;
   cursor: pointer;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.templates-item-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .templates-item-container::before {
   content: "";
   position: absolute;
+  left: -1px;
+  right: -1px;
   top: -38px;
-  width: 100%;
   height: 40px;
   background-color: #ffffff;
   background-image: url("../img/svg/browser.svg");
@@ -1518,6 +1532,7 @@ footer {
 
 .paginator-btn {
   padding: 15px 19px;
+  font-size: 16px;
 }
 
 .paginator-btn-active {
