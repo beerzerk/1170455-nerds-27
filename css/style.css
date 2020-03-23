@@ -75,7 +75,7 @@ html {
   color: #000000;
   margin-bottom: 28px;
   padding-top: 60px;
-  width: 43%;
+  width: 45%;
   word-break: break-all;
 }
 
@@ -365,7 +365,6 @@ html {
 
 .advantages {
   position: relative;
-  margin: 0 auto;
 }
 
 .advantages::after {
@@ -380,33 +379,70 @@ html {
 .advantages-list {
   display: flex;
   margin: 0;
-  padding: 10px 20px 80px 20px;
+  padding: 60px 20px 80px 20px;
   flex-wrap: wrap;
   list-style: none;
+  word-break: keep-all;
 }
 
 .advantage-item {
   position: relative;
   width: 300px;
-  margin-top: 5px;
+  margin: 0;
+  margin-top: 165px;
+  padding: 0;
 }
 
-.advantage-item:nth-child(2n),
-.advantage-item:last-child {
+.advantage-item:nth-of-type(3n+2),
+.advantage-item:nth-of-type(3n+3) {
   margin-left: 100px;
 }
 
+.advantage-item::before {
+  content: "";
+  position: absolute;
+  top: -145px;
+  width: 100%;
+  height: 146px;
+  background-color: #eeeeee;
+}
+
+.advantage-item:nth-of-type(1)::before {
+  background-color: #fb565a;
+  background-image: url("../img/adv/laptop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantage-item:nth-of-type(2)::before {
+  background-color: #00ca74;
+  background-image: url("../img/adv/smartphone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantage-item:nth-of-type(3)::before {
+  background-color: #efc849;
+  background-image: url("../img/adv/presentation.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .advantage-title {
-  color: #000000;
+  margin: 26px 0 16px;
+  padding: 0;
   font-size: 24px;
-  font-size: 24px;
+  line-height: 30px;
   font-weight: bold;
-  line-height: 1.25;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .advantage-content {
-  padding-bottom: 35px;
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-bottom: 32px;
 }
 
 .studio {
@@ -574,7 +610,7 @@ html {
 .clients-list {
   display: flex;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 75px;
   padding: 46px 0 44px;
   justify-content: space-around;
   align-content: space-around;
