@@ -1052,6 +1052,7 @@ footer {
 .shop {
   display: flex;
   padding: 0;
+  margin-bottom: 48px;
 }
 
 .filters {
@@ -1075,7 +1076,6 @@ footer {
 
 .filters-form {
   padding: 0;
-  padding-right: 40px;
 }
 
 .price-slider {
@@ -1450,7 +1450,7 @@ footer {
   width: 360px;
   margin: 0;
   padding: 0;
-  padding-bottom: 64px;
+  padding-bottom: 74px;
   box-sizing: border-box;
 }
 
@@ -1561,7 +1561,7 @@ footer {
   display: flex;
   justify-content: left;
   margin: 0;
-  padding: 0;
+  padding: 9px 0 9px 0;
   list-style: none;
 }
 
